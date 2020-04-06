@@ -1,8 +1,8 @@
 import React from 'react';
-import './Profile.css';
+import s from './Profile.module.css';
 
 const Profile = ()=>{
-return <div className="profile">
+return <div className={s.profile}>
 <div>
   <img src="https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528__340.jpg"></img>
 </div>
