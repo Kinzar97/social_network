@@ -5,32 +5,8 @@ margin:0 auto;
 
 grid-template-areas: 
 "h h"
-"n c";
+"n p";
 grid-template-rows: 60px 1fr;
 grid-template-columns: 2fr 10fr;
 grid-gap: 10px;
-}
-
-.header{
-grid-area: h;
-background-color:#70B510 ;
-
-
-}
-.header img{
-  height:60px;
-  
-}
-
-.nav{
-  grid-area: n;
-  background-color:#70B510;
-}
-
-.content{
-  grid-area: c;
-  background-color:#359DC1 ;
-}
-.content img{
-width:100px
 }
