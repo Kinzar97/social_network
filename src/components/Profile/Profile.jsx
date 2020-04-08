@@ -1,29 +1,15 @@
 import React from 'react';
 import s from './Profile.module.css';
+import Posts from './Posts/Posts.jsx'
+import Photos from './Photos/Photos';
+import Desk from './Description/Desk';
 
-const Profile = ()=>{
-return <div className={s.profile}>
-<div>
-  <img src="https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528__340.jpg"></img>
-</div>
-<div>
-  <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"></img>
-  Description
-</div>
-<div>
-  Posts
-  <div>
-    Post1
-  </div>
-  <div>
-    Post1
-  </div>
-  <div>
-    Post1
-  </div>
-</div>
-</div>
-};
+const Profile = () => {
+  return <div className={s.profile}>
+    <Photos />
+    <Desk />
+    <Posts />
+  </div>;
+}
 
 export default Profile;
-

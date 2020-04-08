@@ -1,7 +1,13 @@
 .profile{
   grid-area: p;
   background-color:#359DC1 ;
+  display:grid;
+  
+
+  grid-template-areas: 
+  "photos desc"
+  "posts posts";
+  grid-template-rows: 250px 1fr;
+  grid-template-columns: 1fr 1fr;
 }
-.profile img{
-width:100px
-}
+

@@ -1,0 +1,5 @@
+.desc{
+    grid-area: desc;
+    background-color: rgb(151, 202, 151) ;
+    padding-left: 122px
+}
