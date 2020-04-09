@@ -1,9 +1,5 @@
 .profile{
-  grid-area: p;
-  background-color:#359DC1 ;
   display:grid;
-  
-
   grid-template-areas: 
   "photos desc"
   "posts posts";
