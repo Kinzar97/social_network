@@ -3,10 +3,16 @@ display:grid;
 width: 1200px;
 margin:0 auto;
 
+
 grid-template-areas: 
 "h h"
 "n p";
 grid-template-rows: 60px 1fr;
 grid-template-columns: 2fr 10fr;
 grid-gap: 10px;
+}
+
+.app_wrapper_content{
+    background-color: rgb(219, 219, 219) ;
+    grid-area: p;
 }
