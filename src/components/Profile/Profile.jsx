@@ -4,11 +4,11 @@ import Posts from './Posts/Posts.jsx'
 import Photos from './Photos/Photos';
 import Desk from './Description/Desk';
 
-const Profile = () => {
+const Profile = (props) => {
   return <div className={s.profile}>
     <Photos />
     <Desk />
-    <Posts />
+    <Posts posts={props.posts}/>
   </div>;
 }
 

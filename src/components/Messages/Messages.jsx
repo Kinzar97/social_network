@@ -3,10 +3,12 @@ import s from './Messages.module.css';
 import DialogueItems from './DialogueItems/DialogueItems';
 import MessageItems from './MessageItems/MessageItems';
 
-const Messages = () => {
+
+const Messages = (props) => {
+
     return <div className={s.messages}>
-        <DialogueItems />
-        <MessageItems />
+        <DialogueItems dialogues = {props.dialogues}/>
+        <MessageItems messages = {props.messages}/>
     </div>;
 }
 
