@@ -1,5 +1,6 @@
 .posts{
     background-color: #D0D6D8;
     grid-area: posts;      
+    padding-left: 25px;
     }
 

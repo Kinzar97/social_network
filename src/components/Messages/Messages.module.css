@@ -4,20 +4,6 @@
     grid-template-columns: 2fr 9fr;
 }
 
-.dialogueItems{
-    padding: 15px;
-}
 
-.messageItems{
-    padding: 15px;
-}
 
-.message{
-    color: rgb(97, 131, 97);
-    padding: 5px;;
-}
-
-.dialogueItems .active{
-    color: gold
-}
 
