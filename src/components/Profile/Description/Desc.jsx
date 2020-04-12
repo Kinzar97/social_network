@@ -1,7 +1,7 @@
 import React from 'react';
-import s from './Desk.module.css'
+import s from './Desc.module.css'
 
-const Desk = ()=>{
+const Desc = ()=>{
     return <div className = {s.desc}>
     <h1> Igor Zaripov</h1>
     <p> Country: Russia</p>
@@ -9,4 +9,4 @@ const Desk = ()=>{
     </div>
 };
 
-export default Desk;
+export default Desc;
