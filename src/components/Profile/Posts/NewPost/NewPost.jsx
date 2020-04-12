@@ -1,11 +1,11 @@
 import React from 'react'
-import s from './New_post.module.css'
+import s from './NewPost.module.css'
 
-const New_post = ()=>{
-    return <div className = {s.new_post}>
+const NewPost = ()=>{
+    return <div className = {s.newPost}>
         <div><textarea></textarea></div>
         <div><button> Create post</button></div>
     </div>
 };
 
-export default New_post;
+export default NewPost;

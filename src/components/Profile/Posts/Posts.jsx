@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './Posts.module.css';
 import Post from './Post/Post.jsx';
-import New_post from './New_post/New_post';
+import NewPost from './NewPost/NewPost';
 
 
 const Posts = (props) => {
@@ -10,7 +10,7 @@ const Posts = (props) => {
 
     return <div className={s.posts}>
         <h3>My posts</h3>
-        <New_post />
+        <NewPost />
         {post}
     </div>
 };
