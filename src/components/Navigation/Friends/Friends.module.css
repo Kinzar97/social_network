@@ -1,0 +1,13 @@
+.friends{
+    margin-top: 100px;
+    background-color: rgb(151, 202, 151) ;
+    border-radius: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-bottom: 10px;
+}
+
+.friends h2{
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
