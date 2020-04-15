@@ -10,7 +10,7 @@ const Posts = (props) => {
 
     return <div className={s.posts}>
         <h3>My posts</h3>
-        <NewPost />
+        <NewPost addPost={props.addPost}/>
         {post}
     </div>
 };
