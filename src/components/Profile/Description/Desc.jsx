@@ -6,6 +6,9 @@ const Desc = ()=>{
     <h1> Igor Zaripov</h1>
     <p> Country: Russia</p>
     <p> City: Magnitogorsk</p>
+    <p> Age: 22</p>
+    <p> About me: programmer, sportsman, student</p>
+
     </div>
 };
 

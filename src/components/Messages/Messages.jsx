@@ -7,8 +7,8 @@ import MessageItems from './MessageItems/MessageItems';
 const Messages = (props) => {
 
     return <div className={s.messages}>
-        <DialogueItems dialogues = {props.state.dialogues}/>
-        <MessageItems messages = {props.state.messages}/>
+        <DialogueItems dialogues = {props.messagesPage.dialogues}/>
+        <MessageItems messages = {props.messagesPage.messages}/>
     </div>;
 }
 

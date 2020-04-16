@@ -1,12 +1,11 @@
 import React from 'react';
 import s from './Post.module.css';
 
-const Post =(props)=>
-{
-    return <div className = {s.post}>
-    <img src ='https://www.kinonews.ru/insimgs/poster/thumbs/poster9623_1.jpg' alt ='avatar'/>
-    {props.message}
-    <div>Likes: {props.likes}</div>
+const Post = (props) => {
+    return <div className={s.post}>
+        <img src='https://sun9-41.userapi.com/c858332/v858332398/ac1f0/QGfA6499WV0.jpg' alt='ph-id' />
+        {props.message}
+        <div>Likes: {props.likes}</div>
     </div>
 };
 
