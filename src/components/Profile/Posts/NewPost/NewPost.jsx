@@ -4,8 +4,8 @@ import s from './NewPost.module.css'
 
 
 const NewPost = (props) => {
-    
-    let addPost = () => {
+
+    let AddPost = () => {
         props.addPost();
     }
 
@@ -17,8 +17,8 @@ const NewPost = (props) => {
     let newPostElement = React.createRef()
 
     return <div className={s.newPost}>
-        <div><textarea onChange = {updatePost} ref={newPostElement} value = {props.profilePage.newPostText}/></div>
-        <div><button onClick={addPost}>Create post</button></div>
+        <textarea onChange={updatePost} ref={newPostElement} value={props.profilePage.newPostText} />
+        <div><button onClick={AddPost}>Create post</button></div>
     </div>
 };
 

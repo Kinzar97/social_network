@@ -7,8 +7,11 @@ import MessageItems from './MessageItems/MessageItems';
 const Messages = (props) => {
 
     return <div className={s.messages}>
-        <DialogueItems dialogues = {props.messagesPage.dialogues}/>
-        <MessageItems messages = {props.messagesPage.messages}/>
+        <DialogueItems dialogues={props.messagesPage.dialogues} />
+        <MessageItems
+            messagesPage={props.messagesPage}
+            addMessage={props.addMessage}
+            updateMessage={props.updateMessage} />
     </div>;
 }
 
