@@ -11,8 +11,7 @@ const MessageItems = (props) => {
         {message}
         <NewMessage
             messagesPage={props.messagesPage}
-            addMessage={props.addMessage}
-            updateMessage={props.updateMessage} />
+            dispatch={props.dispatch} />
     </div>
 };
 

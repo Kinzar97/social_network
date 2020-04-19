@@ -10,8 +10,7 @@ const Profile = (props) => {
     <Desc />
     <Posts 
       profilePage={props.profilePage}
-      addPost={props.addPost}
-      updatePost={props.updatePost} />
+      dispatch={props.dispatch}/>
   </div>;
 }
 

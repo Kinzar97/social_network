@@ -4,12 +4,12 @@ import s from './NewMessage.module.css';
 const NewMessage = (props) => {
 
     let SendMessage = () => {
-        props.addMessage()
+        props.dispatch({type: 'ADD-MESSAGE'})
     };
 
     let UpdateNewMessageText = () => {
         let newText = newMessageElement.current.value;
-        props.updateMessage(newText)
+        props.dispatch({type:'UPDATE-NEW-MESSAGE-TEXT', newText:newText})
     }
 
     let newMessageElement = createRef();

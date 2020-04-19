@@ -6,12 +6,12 @@ import s from './NewPost.module.css'
 const NewPost = (props) => {
 
     let AddPost = () => {
-        props.addPost();
+        props.dispatch({type:'ADD-POST'});
     }
 
     let updatePost = () => {
         let newText = newPostElement.current.value;
-        props.updatePost(newText);
+        props.dispatch({type:'UPDATE-NEW-POST-TEXT', newText:newText});;
     }
 
     let newPostElement = React.createRef()
