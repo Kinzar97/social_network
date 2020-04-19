@@ -7,7 +7,7 @@ const Navigation = (props) => {
         
         return <div className={s.nav}>
                 <NavBar />
-                <Friends friends ={props.state.friends} />
+                <Friends friends ={props.navigationPage.friends} />
         </div >
 };
 
