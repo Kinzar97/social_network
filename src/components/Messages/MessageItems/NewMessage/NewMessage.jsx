@@ -1,4 +1,4 @@
-import React, { createRef } from 'react';
+import React from 'react';
 import s from './NewMessage.module.css';
 import { AddMessageActionCreator, UpdateNewMessageTextActionCreator } from '../../../../redux/store';
 
@@ -9,15 +9,16 @@ const NewMessage = (props) => {
         props.dispatch(AddMessageActionCreator())
     };
 
-    let UpdateNewMessageText = () => {
-        let newText = newMessageElement.current.value;
+    let UpdateNewMessageText = (event) => {
+        let newText = event.target.value;
         props.dispatch(UpdateNewMessageTextActionCreator(newText))
     }
 
-    let newMessageElement = createRef();
-
     return <div className={s.newMessage}>
-        <textarea onChange={UpdateNewMessageText} ref={newMessageElement} value={props.messagesPage.newMessageText} />
+        <div><textarea 
+        placeholder='Enter your message..'
+        onChange={UpdateNewMessageText} 
+        value={props.messagesPage.newMessageText} /></div>
         <div>
             <button onClick={SendMessage}>Send message</button>
         </div>

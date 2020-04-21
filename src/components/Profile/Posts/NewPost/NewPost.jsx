@@ -10,15 +10,16 @@ const NewPost = (props) => {
         props.dispatch(AddPostActionCreator());
     }
 
-    let updatePost = () => {
-        let newText = newPostElement.current.value;
+    let updatePost = (event) => {
+        let newText = event.target.value;
         props.dispatch(UpdateNewPostTextActionCreator(newText));
     }
 
-    let newPostElement = React.createRef()
-
     return <div className={s.newPost}>
-        <textarea onChange={updatePost} ref={newPostElement} value={props.profilePage.newPostText} />
+        <div><textarea 
+        placeholder='Enter your text..'
+        onChange={updatePost} 
+        value={props.profilePage.newPostText} /></div>
         <div><button onClick={AddPost}>Create post</button></div>
     </div>
 };
