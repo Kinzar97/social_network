@@ -14,7 +14,7 @@ const App = (props) => {
   return (
     <div className='app_wrapper'>
       <Header />
-      <Navigation navigationPage={props.state.navigationPage} />
+      <Navigation navigation={props.state.navigation} />
       <div className='app_wrapper_content'>
         <Route path='/profile' render={() =>
           <Profile
