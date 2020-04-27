@@ -11,7 +11,6 @@ const Posts = (props) => {
     return <div className={s.posts}>
         <h3>My posts</h3>
         <NewPostContainer 
-        dispatch={props.dispatch} 
         store = {props.store} />
         {post}
     </div>
