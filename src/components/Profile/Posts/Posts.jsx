@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './Posts.module.css';
 import Post from './Post/Post.jsx';
-import NewPost from './NewPost/NewPost';
+import NewPostContainer from './NewPost/NewPostContainer';
 
 
 const Posts = (props) => {
@@ -10,9 +10,9 @@ const Posts = (props) => {
 
     return <div className={s.posts}>
         <h3>My posts</h3>
-        <NewPost 
+        <NewPostContainer 
         dispatch={props.dispatch} 
-        profilePage = {props.profilePage}/>
+        store = {props.store} />
         {post}
     </div>
 };
