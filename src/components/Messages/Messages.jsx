@@ -10,7 +10,7 @@ const Messages = (props) => {
         <DialogueItems dialogues={props.messagesPage.dialogues} />
         <MessageItems
             messagesPage={props.messagesPage}
-            dispatch={props.dispatch} />
+            store = {props.store} />
     </div>;
 }
 

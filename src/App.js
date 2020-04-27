@@ -23,7 +23,8 @@ const App = (props) => {
         <Route path='/messages' render={() =>
           <Messages
             messagesPage={props.state.messagesPage}
-            dispatch={props.dispatch} />} />
+            store = {props.store} 
+            />} />
         <Route path='/news' component={News} />
         <Route path='/music' component={Music} />
         <Route path='/settings' component={Settings} />

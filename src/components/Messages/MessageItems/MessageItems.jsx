@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './MessageItems.module.css';
 import Message from './Message/Message';
-import NewMessage from './NewMessage/NewMessage';
+import NewMessageContainer from './NewMessage/NewMessageContainer';
 
 const MessageItems = (props) => {
 
@@ -9,9 +9,8 @@ const MessageItems = (props) => {
 
     return <div className={s.messageItems}>
         {message}
-        <NewMessage
-            messagesPage={props.messagesPage}
-            dispatch={props.dispatch} />
+        <NewMessageContainer
+            store = {props.store} />
     </div>
 };
 
